@@ -1,10 +1,3 @@
-//
-//  FlagGuessingGameUITestsLaunchTests.swift
-//  FlagGuessingGameUITests
-//
-//  Created by Kate Hickey on 21/03/2025.
-//
-
 import XCTest
 
 final class FlagGuessingGameUITestsLaunchTests: XCTestCase {

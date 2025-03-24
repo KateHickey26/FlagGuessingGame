@@ -1,17 +1,24 @@
-//
-//  FlagGuessingGameTests.swift
-//  FlagGuessingGameTests
-//
-//  Created by Kate Hickey on 21/03/2025.
-//
-
-import Testing
+import XCTest
 @testable import FlagGuessingGame
 
-struct FlagGuessingGameTests {
-
-    @Test func example() async throws {
-        // Write your test here and use APIs like `#expect(...)` to check expected conditions.
+final class FlagGuessingGameTests: XCTestCase {
+    
+    func testLevenshteinDistance() throws {
+        let view = ContentView()
+        // "belguim" should be 1 character different from "belgium"
+        let distance = view.levenshteinDistance("belguim", "belgium")
+        XCTAssertEqual(distance, 1, "The Levenshtein distance between 'belguim' and 'belgium' should be 1")
     }
-
+    
+    func testIsSimilar() throws {
+        let view = ContentView()
+        // "belguim" should be similar to "belgium" (allowing 2 character differences)
+        XCTAssertTrue(view.isSimilar("belguim", "belgium"))
+        
+        // Identical strings should be similar
+        XCTAssertTrue(view.isSimilar("france", "france"))
+        
+        // Different strings should not be considered similar
+        XCTAssertFalse(view.isSimilar("spain", "france"))
+    }
 }
