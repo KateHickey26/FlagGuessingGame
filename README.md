@@ -12,13 +12,16 @@ A SwiftUI-based flag guessing game where a flag is displayed and you have to typ
 - **Unit & UI Tests:** Includes basic tests for game logic using XCTest.
 
 Game overview
-<img width="379" alt="Screenshot 2025-05-12 at 13 52 20" src="https://github.com/user-attachments/assets/cff555c3-e608-4f2f-8df0-036c53cf600a" />
+
+<img width="179" alt="Screenshot 2025-05-12 at 13 52 20" src="https://github.com/user-attachments/assets/cff555c3-e608-4f2f-8df0-036c53cf600a" />
 
 I give up!
-<img width="373" alt="Screenshot 2025-05-12 at 13 52 47" src="https://github.com/user-attachments/assets/446d80cf-bb35-4972-98b9-71499c2e971a" />
+
+<img width="173" alt="Screenshot 2025-05-12 at 13 52 47" src="https://github.com/user-attachments/assets/446d80cf-bb35-4972-98b9-71499c2e971a" />
 
 Correct!
-<img width="376" alt="Screenshot 2025-05-12 at 13 53 11" src="https://github.com/user-attachments/assets/dee9f73d-b3dc-4d1d-805f-3f2d25db008c" />
+
+<img width="176" alt="Screenshot 2025-05-12 at 13 53 11" src="https://github.com/user-attachments/assets/dee9f73d-b3dc-4d1d-805f-3f2d25db008c" />
 
 
 ## Requirements
