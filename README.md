@@ -4,12 +4,15 @@ A SwiftUI-based flag guessing game where a flag is displayed and you have to typ
 
 ## Features
 
-- **Local JSON Data:** Flags and country data are loaded from a bundled JSON file, making the app self-contained.
-- **Fuzzy Matching:** Supports minor misspellings using a Levenshtein distance algorithm.
-- **Alternative Names:** Recognizes alternative names and abbreviations (e.g., "usa" for "United States").
-- **Visual Feedback:** Displays animations for correct and incorrect answers, including a blink effect for subsequent wrong attempts.
-- **Interactive UI:** Buttons for "Submit", "Next", and "I Give Up" with dynamic states and animations.
-- **Unit & UI Tests:** Includes basic tests for game logic using XCTest.
+- ✅ **Offline support:** Flags and country data are loaded from a bundled JSON file, making the app self-contained and offline supported.
+- 🤖 **Fuzzy Matching:** Supports minor misspellings using a Levenshtein distance algorithm.
+- 🔁 **Alternative Names:** Recognizes alternative names and abbreviations (e.g., "usa" for "United States").
+- ✨ **Visual Feedback:** Displays animations for correct and incorrect answers, including a blink effect for subsequent wrong attempts.
+- 🧠 **"I Give Up" button** – reveals the answer and disables further guesses.
+- 🎯 **Score tracking** – tracks your correct answers.
+- 🖼 **Stylized UI** – hand-drawn map background, semi-transparent UI card, mobile-optimized layout.
+- ▶️ **Interactive UI:** Buttons for "Submit", "Next", and "I Give Up" with dynamic states and animations.
+- 🧪 **Unit tested** – Levenshtein distance and fuzzy logic tested using XCTest
 
 Game overview
 
@@ -23,7 +26,6 @@ Correct!
 
 <img width="176" alt="Screenshot 2025-05-12 at 13 53 11" src="https://github.com/user-attachments/assets/dee9f73d-b3dc-4d1d-805f-3f2d25db008c" />
 
-
 ## Requirements
 
 - Xcode 15 (or later)
@@ -36,3 +38,45 @@ Correct!
    ```bash
    git clone https://github.com/YOUR_USERNAME/FlagGuessingGame.git
    cd FlagGuessingGame
+   ```
+
+2.	Open in Xcode:
+   ```bash
+   open FlagGuessingGame.xcodeproj
+   ```
+
+3.	Run the app
+   •	Use the iOS Simulator or a physical device.
+	•	Press ⌘ + R to build and run.
+
+## Running tests
+
+The project includes unit tests for fuzzy matching and string distance logic.
+
+To run tests:
+```bash
+⌘ + U
+```
+Or open the Test Navigator (⌘ + 6) and run individual tests.
+
+## License
+
+MIT License. See LICENSE for details.
+
+## Author
+
+Kate Hickey
+Software engineer & builder of tiny, thoughtful apps
+LinkedIn • Portfolio • GitHub
+
+## Why I Built It
+
+I wanted to create a small but polished SwiftUI app that combined:
+
+- Clean, responsive UI
+- Non-trivial user input handling
+- Animations that improve UX
+- A playful but educational purpose
+
+This project also served as a hands-on way to explore SwiftUI state management, string distance algorithms, layout responsiveness, and testing strategy.
+I was inspired by my partner, who always amazes me with his knowledge of flags! He's now the number one fan of this game.
